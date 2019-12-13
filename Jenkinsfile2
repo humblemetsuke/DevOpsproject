@@ -1,4 +1,17 @@
+
+
 pipeline {
+
+
+environment {
+
+registry = "humblemetsuke/DevOpsproject"
+
+registryCredential = 'e1984af9-1751-4825-883a-9194875c8f89'
+
+
+
+}
    agent any
 
    stages {

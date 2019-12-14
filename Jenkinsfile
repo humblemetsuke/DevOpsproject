@@ -4,6 +4,7 @@ pipeline {
    stages {
       stage('Deploy VM') {
          steps {
+            ansiblePlaybook installation: 'ansible-2.0.0.2', playbook: '/home/humblemetsuke/jenkins-data/workspace/coursework_2_kubernetes/K8S/roles/master/tasks/aws.yml'
             ansiblePlaybook playbook: 'roles/master/tasks/aws.yml'
          }
       }
